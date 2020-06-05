@@ -4,9 +4,54 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lateef', cursive;
+    font-family: 'Zilla Slab', serif;
 }
 
+.mySlides {
+    display: none
+}
+
+#face:hover {
+    color: blue;
+}
+
+#insta:hover {
+    color: white;
+    background-color: darkorange;
+}
+
+#twit:hover {
+    color: cornflowerblue;
+}
+
+.fondo-negro {
+    background-color: rgba(4, 50, 78, 0.9);
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 2px;
+}
+
+#subtitulo {
+    color: #04324e;
+    text-shadow: -1px 1px 3px #5274e5;
+}
+
+
+.btn-menu:active i {
+    background-color: rgba(4, 50, 78, 0.9);
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 2px;
+}
+
+.my-photo{
+    width: 100%;
+    height: auto;
+}
+
+.myPhoto{
+    margin: 5px;
+}
 
 /* ------------------- Estilo de la vista mobile -------------------------- */
 /* ------------------------------------------------------------------------ */
@@ -25,25 +70,23 @@
 
 /* ------------------- Estilo de la vista tablet -------------------------- */
 /* ------------------------------------------------------------------------ */
-@media screen and (min-width: 650px) {
-
-    
-    
-    
-    
-    
-}
+@media screen and (min-width: 650px) {}
 
 
 
 /* --------------------- Estilo de la vista PC ---------------------------- */
 /* ------------------------------------------------------------------------ */
 @media screen and (min-width: 1024px) {
-    
-    
-    
-    
-    
-    
-    
+
+
+    .menu-slide {
+        display: none;
+        left: 100%;
+    }
+
+
+    #myNavbar i,
+    #mySidebar i {
+        color: rgba(4, 50, 78, 0.9);
+    }
 }

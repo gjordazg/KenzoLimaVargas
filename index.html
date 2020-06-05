@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Kenzo Lima Vargas - Especialista en Acabados</title>
+    <meta name="description" content="Servicio de Pintura en General">
+    <meta name="keywords" content="enduido, satinado, esmalte, barniz, revestimiento, durlock, micropisos">
+    <meta name="author" content="Gabriel Ordaz">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <title>Kenzo Lima Vargas - Home</title>
-    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Kalam&family=Merienda&family=Mirza&family=Oregano&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link type="text/css" rel="stylesheet" href="estilo.css">
     <script src="https://kit.fontawesome.com/0f157db75e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,26 +19,27 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <!-- Menu bar icon -->
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" id="btn-menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button">Acabados <b>KLV</b></a>
+            <!-- Logo -->
+            <a href="#home" class="w3-bar-item w3-button">Acabados <b class="fondo-negro">KLV</b></a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ¿Quién soy?</a>
-                <a href="#galerias" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Mi Trabajo</a>
-                <a href="#contacto" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contacto</a>
+                <a href="#galeria" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Mi Trabajo</a>
+                <a href="#contacto" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contáctame</a>
             </div>
         </div>
 
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">¿Quién soy?</a>
-            <a href="#galeria" class="w3-bar-item w3-button" onclick="toggleFunction()">Mi Trabajo</a>
-            <a href="#contacto" class="w3-bar-item w3-button" onclick="toggleFunction()">Contacto</a>
+        <!-- Navbar on small screens/ Menu lateral-->
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right menu-slide" style="width:200px;right:0;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="toggleFunction()">Close &times;</button>
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> ¿Quién soy?</a>
+            <a href="#galeria" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Mi Trabajo</a>
+            <a href="#contacto" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contáctame</a>
         </div>
-
     </div>
 
 
@@ -41,21 +47,24 @@
     <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
         <img class="w3-image" src="galeria/banner.jpg" alt="Acabados" width="1500" height="800">
         <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>K</b>enzo <b>L</b>ima <b>V</b>argas</span><br /><span class="w3-hide-small w3-text-light-grey">Especialista en Acabados</span></h1>
+            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>K</b>enzo <b>L</b>ima <b>V</b>argas</span><br /><span class="w3-hide-small" id="subtitulo">Especialista en Acabados</span></h1>
         </div>
     </header>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">¿Quién soy?</h3>
-        <p class="w3-center"><em>Especialista en Acabados</em></p>
-        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="w3-center"><em>Soy especialista en acabados</em></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, neque. Modi libero delectus illo at ab autem quo, dicta voluptate cupiditate, accusamus earum dolores harum eius praesentium vitae porro magnam.</p>
         <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
+            <div class="my-photo w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>Kenzo Lima Vargas</b></p><br>
-                <img src="galeria/kenzo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <img class="myPhoto w3-animate-fading" src="galeria/Trabajo/Kenzo01.jpg" alt="Photo of Me" width="333" height="500" style="transform: rotateZ(90deg)">
+                    <img class="myPhoto w3-animate-fading" src="galeria/Trabajo/Kenzo02.jpg" alt="Photo of Me" width="333" height="500" style="transform: rotateZ(90deg)">
+                    <img class="myPhoto w3-animate-fading" src="galeria/Trabajo/Kenzo03.jpg" alt="Photo of Me" width="333" height="500" style="transform: rotateZ(90deg)">
+                </div>
+
             </div>
 
             <!-- Hide this text on small devices -->
@@ -67,77 +76,216 @@
         </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">Galería</span>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="galeria">
+        <h3 class="w3-center">Mi trabajo</h3>
+        <p class="w3-center"><em>Aquí encontrarás algo de mi trabajo.<br> Haz clic sobre la imágen para hacerla más grande</em></p><br>
+
+        <!-- Push down content on small screens 
+        <div class="w3-hide-large" style="margin-top:83px"></div>-->
+
+        <!-- Photo grid/ Slideshow Indicators -->
+
+        <div class="w3-content" style="max-width:800px">
+            <!-- Firt Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Bathroom/bath01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Bathroom/bath02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Bathroom/bath03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Bathroom/bath04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Bathroom/bath05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Hoyo/IMG-20200527-WA0097.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Escalera/stairs01.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Escalera/stairs02.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Escalera/stairs03.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
+
+            <!-- Second Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Estante/estante01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Estante/estante02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Estante/estante03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Estante/estante04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Estante/estante05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Estante/estante06.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Techo/techo01.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Techo/techo03.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Techo/techo04.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
+
+            <!-- Third Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Local/local01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Local/local02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Local/local03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Local/local04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Local/local05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Pared/wall10.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Puerta/door01.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Puerta/door02.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Puerta/door03.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
+
+
+            <!-- Forth Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Patio/patio01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Patio/patio02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Patio/patio03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Patio/patio04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Patio/patio05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Patio/patio06.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Patio/patio07.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Mesada/mesa01.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Mesada/mesa02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
+
+            <!-- Fifth Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Piso/floor01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Piso/floor02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Piso/floor03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Piso/floor04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Piso/floor05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Piso/floor06.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Patio/wood01.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Patio/wood02.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Patio/wood03.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
+
+            <!-- Sixth Slide  -->
+            <div class="w3-row mySlides">
+                <div class="w3-third">
+                    <img src="galeria/Pared/wall01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    <img src="galeria/Pared/wall02.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <img src="galeria/Pared/wall03.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Pared/wall04.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="galeria/Pared/wall05.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+                    <img src="galeria/Pared/wall06.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+                </div>
+
+                <div class="w3-third">
+                    <img src="galeria/Pared/wall07.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    <img src="galeria/Pared/wall08.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                    <img src="galeria/Pared/wall09.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">Mi trabajo</h3>
-        <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">«</button>
+            <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+            <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+            <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+            <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">»</button>
+        </div>
+    </div>
 
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption"></p>
+        </div>
+    </div>
 
-        <!-- Photo grid -->
-        <div class="w3-row">
-            <div class="w3-third">
-                <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-                <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-                <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contacto">
+        <h3 class="w3-center">Contáctame</h3>
+        <p class="w3-center"><em>Apreciaré tus comentarios</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13132.260674265006!2d-58.38310044999999!3d-34.6277934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1591047590866!5m2!1ses-419!2sar" class="w3-image w3-round" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-
-            <div class="w3-third">
-                <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-                <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-                <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
-            </div>
-
-            <div class="w3-third">
-                <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-                <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-                <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Buenos Aires, Argentina<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Teléfono: +54 911 3941-3828<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+                </div>
+                <p>Déame tu comentario y me podré en contacto:</p>
+                <form action="enviar.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> Enviar
+                    </button>
+                </form>
             </div>
         </div>
+    </div>
 
-        <!-- Pagination -->
-        <div class="w3-center w3-padding-32">
-            <div class="w3-bar">
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-            </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+        <div class="btn">
+            <a href="www.facebook.com" class="social-btn"><i class="fa fa-facebook-official social-icon" id="face"></i></a>
+            <a href="www.instagram.com" class="social-btn"><i class="fa fa-instagram social-icon" id="insta"></i></a>
+            <a href="www.twitter.com" class="social-btn"><i class="fa fa-twitter social-icon" id="twit"></i></a>
+            <a href="www.linkedin.com" class="social-btn"><i class="fa fa-linkedin social-icon" id="linked"></i></a>
         </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption"></p>
-            </div>
-        </div>
-
-
-        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunctionGrid()">Toggle Grid Padding</button></p>
-
-
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <div class="w3-content w3-container w3-padding-64" id="author">
             <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        </footer>
+        </div>
+    </footer>
 
-        <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
 </body></html>
