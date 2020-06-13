@@ -7,28 +7,33 @@
     font-family: 'Zilla Slab', serif;
 }
 
+h3 {
+    font-family: 'Oregano', cursive;
+    font-size: 30px;
+}
+
+
 .mySlides {
     display: none
 }
 
 #face:hover {
-    color: blue;
+    color: #3b5998;
 }
 
 #insta:hover {
-    color: white;
-    background-color: darkorange;
+    color: #f8bc17, #c909c9;
 }
 
 #twit:hover {
-    color: cornflowerblue;
+    color: #3cf;
 }
 
-.fondo-negro {
+.logo {
     background-color: rgba(4, 50, 78, 0.9);
     border-radius: 5px;
     color: #ffffff;
-    padding: 2px;
+    padding: 3.5px;
 }
 
 #subtitulo {
@@ -44,13 +49,17 @@
     padding: 2px;
 }
 
-.my-photo{
+.my-photo {
     width: 100%;
     height: auto;
 }
 
-.myPhoto{
-    margin: 5px;
+.myPhoto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    width: 500;
+    height: 333;
 }
 
 /* ------------------- Estilo de la vista mobile -------------------------- */
@@ -70,7 +79,20 @@
 
 /* ------------------- Estilo de la vista tablet -------------------------- */
 /* ------------------------------------------------------------------------ */
-@media screen and (min-width: 650px) {}
+@media screen and (min-width: 650px) {
+
+    h3 {
+        font-size: 40px;
+    }
+    
+    .mySlides img{
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .lista{
+        padding-left: 50px;
+    }
+}
 
 
 
@@ -78,12 +100,20 @@
 /* ------------------------------------------------------------------------ */
 @media screen and (min-width: 1024px) {
 
-
+    h3 {
+        font-size: 50px;
+    }
+    
     .menu-slide {
         display: none;
         left: 100%;
     }
-
+    
+    
+.myPhoto {
+    width: 400;
+    height: 300;
+}
 
     #myNavbar i,
     #mySidebar i {

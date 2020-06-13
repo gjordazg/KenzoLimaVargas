@@ -13,8 +13,8 @@ $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['Message'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'formularioweb.phpmailer@gmail.com';
-$asunto = 'Kenzo Lima Vargas';
+$para = 'acabadosklv@gmail.com';
+$asunto = 'Nueva consulta desde pagina web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
