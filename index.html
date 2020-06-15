@@ -17,7 +17,7 @@
 <body>
 
     <!-- Barra de menu (borde superior) -->
-    <div class="w3-top">
+    <div class="w3-top texto-menu">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card" id="myNavbar">
 
             <!-- Menu bar icon -->
@@ -53,9 +53,11 @@
 
         <!-- Mensaje -->
         <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>K</b>enzo <b>L</b>ima <b>V</b>argas</span><br /><span class="w3-hide-small" id="subtitulo">Especialista en Acabados</span></h1>
+            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min" id="titulo"><b>K</b>enzo <b>L</b>ima <b>V</b>argas</span><br /><span class="w3-hide-small" id="subtitulo">Especialista en Acabados</span></h1>
         </div>
     </header>
+
+
 
     <!-- Seccion de presentacion -->
     <div class="w3-content w3-container w3-padding-64" id="about">
@@ -283,10 +285,12 @@
             </div>
             <div class="w3-col m8 w3-panel">
                 <!-- Datos de contacto -->
-                <div class="w3-large w3-margin-bottom">
+                <div class="w3-large w3-margin-bottom" id="panel-contacto">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Buenos Aires, Argentina<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Teléfono: +54 911 3941-3828<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: acabadosklv@gmail.com<br>
+                    <!-- Boton de whatsap -->
+                    <a class="contacto" href="https://api.whatsapp.com/send?phone=5491139413828" target="_blank"><i class="fab fa-whatsapp w3-hover-text-black w3-xlarge w3-margin-right"></i> Teléfono: +54 911 3941-3828<br></a>
+                    <!-- Boton de email -->
+                    <a class="contacto" href="mailto:acabadosklv@gmail.com"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: acabadosklv@gmail.com<br></a>
                 </div>
                 <p>Envíame tu consulta y me podré en contacto a la brevedad:</p>
 
@@ -301,7 +305,7 @@
                         </div>
                     </div>
                     <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                    <button class="w3-button w3-right w3-section" type="submit" id="btn-enviar">
                         <i class="fa fa-paper-plane"></i> Enviar
                     </button>
                 </form>
@@ -312,9 +316,10 @@
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
         <div class="btn">
-            <a href="www.facebook.com" target="_blank" class="social-btn"><i class="fa fa-facebook-official social-icon" id="face"></i></a>
-            <a href="www.instagram.com" target="_blank" class="social-btn"><i class="fa fa-instagram social-icon" id="insta"></i></a>
-            <a href="www.twitter.com" target="_blank" class="social-btn"><i class="fa fa-twitter social-icon" id="twit"></i></a>
+           <span>Visítame en: </span>
+            <a href="https://www.facebook.com/profile.php?id=100004752799024" target="_blank" class="social-btn"><i class="fa fa-facebook-official social-icon" id="face"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="fa fa-instagram social-icon" id="insta"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-btn"><i class="fa fa-twitter social-icon" id="twit"></i></a>
         </div>
         <div class="w3-container">
             <p class="w3-medium" id="author">Diseño y desarrollo <a href="https://www.linkedin.com/in/gabrielordazgz/" target="_blank" class="w3-hover-text-green">Gabriel Ordaz</a> || Basado en templates de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> || Todos los derechos reservados</p>
@@ -322,4 +327,6 @@
     </footer>
 
     <script type="text/javascript" src="funciones.js"></script>
-</body></html>
+</body>
+
+</html>

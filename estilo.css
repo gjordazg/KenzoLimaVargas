@@ -7,14 +7,40 @@
     font-family: 'Zilla Slab', serif;
 }
 
-h3 {
-    font-family: 'Oregano', cursive;
-    font-size: 30px;
+/* ------------------- Estilo de la vista mobile -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.texto-menu, #panel-contacto{
+    font-size: 20px;
+    color: rgba(4, 50, 78, 0.9);
 }
 
+#titulo {
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Oregano', cursive;
+    font-size: 50px;
+    color: #03141f;
+    text-shadow: -1px 1px 3px #5274e5;
+}
 
 .mySlides {
     display: none
+}
+
+.social-btn {
+    margin: auto;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-size: 25px;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+    box-shadow: -3px 3px 3px #000;
+    border-radius: 50%;
 }
 
 #face:hover {
@@ -22,7 +48,9 @@ h3 {
 }
 
 #insta:hover {
-    color: #f8bc17, #c909c9;
+    border-radius: 25%;
+    background-image: linear-gradient(to top right, #ffa700, #a700ff);
+    color: #fff;
 }
 
 #twit:hover {
@@ -35,12 +63,6 @@ h3 {
     color: #ffffff;
     padding: 3.5px;
 }
-
-#subtitulo {
-    color: #04324e;
-    text-shadow: -1px 1px 3px #5274e5;
-}
-
 
 .btn-menu:active i {
     background-color: rgba(4, 50, 78, 0.9);
@@ -62,14 +84,26 @@ h3 {
     height: 333;
 }
 
-/* ------------------- Estilo de la vista mobile -------------------------- */
-/* ------------------------------------------------------------------------ */
+.contacto {
+    text-decoration: none;
+}
 
+.contacto:hover {
+    color: #3cf;
+}
 
+.contacto:active {}
 
+.contacto:visited {
+    text-decoration: none;
+    color: rgba(4, 50, 78, 0.9);
+}
 
-
-
+#btn-enviar {
+    background-color: rgba(4, 50, 78, 0.9);
+    border-radius: 5px;
+    color: #ffffff;
+}
 
 
 
@@ -81,16 +115,41 @@ h3 {
 /* ------------------------------------------------------------------------ */
 @media screen and (min-width: 650px) {
 
+    .texto-menu {
+        font-size: 14.5px;
+        color: rgba(4, 50, 78, 0.9);
+    }
+
+    #titulo {
+        font-size: 30px;
+    }
+
+    #subtitulo {
+        font-size: 50px;
+        color: #04324e;
+        text-shadow: -1px 1px 3px #5274e5;
+    }
+
     h3 {
         font-size: 40px;
+        color: #04324e;
+        text-shadow: -1px 1px 3px #5274e5;
     }
-    
-    .mySlides img{
+
+    .mySlides img {
         padding: 10px;
         border-radius: 25px;
     }
-    .lista{
+
+    .lista {
         padding-left: 50px;
+    }
+
+    .boton-whsp {
+        top: 500px;
+        width: 60px;
+        height: 60px;
+        font-size: 2.3em;
     }
 }
 
@@ -100,23 +159,37 @@ h3 {
 /* ------------------------------------------------------------------------ */
 @media screen and (min-width: 1024px) {
 
+    .texto-menu {
+        font-size: 17.5px;
+        color: rgba(4, 50, 78, 0.9);
+    }
+
+
+
     h3 {
         font-size: 50px;
     }
-    
+
     .menu-slide {
         display: none;
         left: 100%;
     }
-    
-    
-.myPhoto {
-    width: 400;
-    height: 300;
-}
 
-    #myNavbar i,
-    #mySidebar i {
-        color: rgba(4, 50, 78, 0.9);
+    .boton-whsp {
+        top: 680px;
+        width: 70px;
+        height: 70px;
+        font-size: 2.8em;
+    }
+
+    .myPhoto {
+        width: 400;
+        height: 300;
+    }
+
+
+
+    .social-btn:active {
+        transform: scale(0.9);
     }
 }
