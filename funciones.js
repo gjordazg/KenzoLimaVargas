@@ -1,13 +1,5 @@
-//Right-sided Collapsible Navigation
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
+//Toggle and FadeOut  para la barra de menu lateral (pantallas chicas)
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("mySidebar");
     if (x.className.indexOf("w3-show") == -1) {
@@ -17,9 +9,25 @@ function toggleFunction() {
     }
 }
 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
 
 
-//Faded Animation
+// Change style of navbar on scroll
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+
+//Faded Animation para las fotos en la seccion "Quien soy"
 
 var myIndex = 0;
 carousel();
@@ -36,7 +44,8 @@ function carousel() {
   setTimeout(carousel, 7000);    
 }
 
-//Slideshow Indicators
+
+//Slideshow Indicators para la paginacion de la galeria
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -65,7 +74,9 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-red";
 }
 
-// Modal Image Gallery
+
+// Modal Image de las fotos en la galeria
+
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
@@ -73,13 +84,11 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+
+//Toggle para el formulario de envio
+
+$(document).ready(function(){
+  $("#enviar").click(function(){
+    $("#formulario").fadeToggle(1500);
+  });
+});
