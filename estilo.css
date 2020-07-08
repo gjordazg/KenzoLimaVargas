@@ -17,12 +17,14 @@
     border-radius: 5px;
     color: #ffffff;
     padding: 3.5px;
+    font-family: 'Spectral', serif;
 }
 
 .texto-menu {
     font-size: 20px;
     color: rgba(4, 50, 78, 0.9);
 }
+
 
 .btn-menu:active i {
     background-color: rgba(4, 50, 78, 0.9);
@@ -33,6 +35,7 @@
 
 #titulo {
     font-size: 35px;
+
 }
 
 
@@ -49,7 +52,7 @@ h3 {
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
 /* Estilo de la seccion de descipcion */
@@ -158,6 +161,8 @@ h3 {
     pointer-events: none;
     line-height: 50px;
     top: -50px;
+    font-family: 'Spectral', serif;
+
 }
 
 .center ul:hover .text {
@@ -171,7 +176,7 @@ h3 {
     width: 50px;
     background-color: rgba(4, 50, 78);
     line-height: 55px;
-    margin: 0 -16px;
+    margin: 0 -10px;
     cursor: pointer;
     border-radius: 0;
     transition: backgroud-color .5s ease-out,
@@ -205,7 +210,7 @@ h3 {
     border-top-left-radius: 25px;
 }
 
-.center ul li:nth-child(5) {
+.center ul li:nth-child(3) {
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -258,7 +263,8 @@ h3 {
     #subtitulo {
         font-size: 50px;
         color: #04324e;
-        text-shadow: -1px 1px 3px #5274e5;
+        text-shadow: -2px 2px 5px #5274e5, 0 0 15px rgba(155, 221, 205, 0.93);
+        font-family: 'Spectral', serif;
     }
 
     h3 {
